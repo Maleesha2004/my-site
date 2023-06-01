@@ -1,0 +1,242 @@
+<html>
+<head>
+  <meta charset="utf-8" />
+  <title>XM - Trading Point</title>
+  
+</head>
+<body>
+<div class="header">
+  <div class="inner-header flex">
+  <h1>XM - Trading Point</h1>
+  </div>
+  <div>
+    <div class="dropdown-list-container">
+        <div class="dropdown-list-wrapper">
+          <ul class="dropdown-list"></ul>
+        </div>
+    </div>
+  <svg class="waves" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+
+  viewBox="0 24 150 28" preserveAspectRatio="none" shape-rendering="auto">
+  <defs>
+  <path id="gentle-wave" d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z" />
+  </defs>
+  <g class="parallax">
+  <use xlink:href="#gentle-wave" x="48" y="0" fill="rgba(255,255,255,0.7)" />
+  <use xlink:href="#gentle-wave" x="48" y="3" fill="rgba(255,255,255,0.5)" />
+  <use xlink:href="#gentle-wave" x="48" y="5" fill="rgba(255,255,255,0.3)" />
+  <use xlink:href="#gentle-wave" x="48" y="7" fill="#fff" />
+  </g>
+  </svg>
+  </div>
+  <div class="content flex">
+    <style>
+        @import url(//fonts.googleapis.com/css?family=Lato:300:400);
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Exo',sans-serif;
+}
+h1 {
+  font-family: 'Exo',sans-serif;
+  font-weight:300;
+  letter-spacing: 2px;
+  font-size:48px;
+  text-shadow: #f1f4f6;
+}
+ a {
+  font-family: 'Exo',sans-serif;
+  font-weight:100;
+  letter-spacing: 2px;
+  font-size:18px;
+  
+ 
+}
+.p {
+  font-family: 'Exo',sans-serif;
+  letter-spacing: 1px;
+  font-size:14px;
+  color:rgb(239, 232, 232)
+}
+.container {
+  width: 100%;
+  height: 100vh;
+  position: absolute;
+  padding: 0 5%;
+  display: flex;
+  align-items: safe;
+  justify-content: center;
+}
+nav {
+  width: 100%;    
+  position: fixed;
+  top: 0;
+  left: 0;
+  padding: 20px 8%;
+  align-items: center;
+  justify-content: flex-end;
+}
+nav ul li {
+  list-style: none;
+  display: inline-block;
+  margin-left: 50px;
+}
+nav ul li a {
+        text-decoration: none;
+        color:#e5e7e7f6;
+        font-size: 25px;
+}
+.head {
+        text-align: center;
+}
+.head h1 {
+        font-size: 50px;
+        color: #fff;
+        font-weight: 600;
+        transition: 0.75s;
+    }
+    .head h1:hover {
+        -webkit-text-stroke: 2px #fff;
+        color: transparent;
+    }
+    .head a {
+        text-decoration: none;
+        display: inline-block;
+        color: hwb(0 95% 4% / 0.734);
+        font-size: 25px;
+        border: 2px solid #fff;
+        border-radius: 50px;
+        padding: 14px 70px;
+        margin-top: 25px;
+    }
+    .back {
+        position: absolute;
+        right: 0;
+        bottom: 0;
+        z-index: -1;
+    }
+    
+
+
+.header {
+  position:relative;
+  text-align:center;
+  background: -webkit-linear-gradient(to right, #cbd0d4, #dde1e2);
+  background: linear-gradient(to right, #2a2a2bf5, #171a1d);
+  color:rgba(243, 237, 237, 0.749);
+}
+.logo {
+  width:50px;
+  fill:rgb(252, 251, 251);
+  padding-right:15px;
+  display:inline-block;
+  vertical-align: middle;
+}
+
+.inner-header {
+  height:65vh;
+  width:100%;
+  margin: 0;
+  padding: 0;
+}
+
+.flex { /*Flexbox for containers*/
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.waves {
+  position:relative;
+  width: 100%;
+  height:15vh;
+  margin-bottom:-7px; 
+  min-height:100px;
+  max-height:150px;
+}
+
+.content {
+  position:relative;
+  height:20vh;
+  text-align:center;
+  background-color: #ffffff;
+}
+
+/* Animation */
+
+.parallax > use {
+  animation: move-forever 25s cubic-bezier(.55,.5,.45,.5)infinite;
+}
+.parallax > use:nth-child(1) {
+  animation-delay: -2s;
+  animation-duration: 7s;
+}
+.parallax > use:nth-child(2) {
+  animation-delay: -3s;
+  animation-duration: 10s;
+}
+.parallax > use:nth-child(3) {
+  animation-delay: -4s;
+  animation-duration: 13s;
+}
+.parallax > use:nth-child(4) {
+  animation-delay: -5s;
+  animation-duration: 20s;
+}
+@keyframes move-forever {
+  0% {
+   transform: translate3d(-90px,0,0);
+  }
+  100% { 
+    transform: translate3d(85px,0,0);
+  }
+}
+
+@media (max-width: 768px) {
+  .waves {
+    height:40px;
+    min-height:40px;
+  }
+  .content {
+    height:30vh;
+  }
+  h1 {
+    font-size:24px;
+  }
+  .back
+    {
+        width: 100%;
+        height: auto;
+
+    }
+    .back
+    {
+        width: auto;
+        height: 100%;
+    }
+    
+}
+     </style>
+     <body>
+        <div class="container">
+            <nav>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">service</a></li>
+                    <li><a href="#">contact</a></li>
+                </ul>
+            </nav>
+            <div class="head">
+                <a href="#">Like</a>
+            </div>
+        </div>
+     </body>
+                   
+  </div>
+  <script src="/js/main.js"></script>
+</body>
+</html>
